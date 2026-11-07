@@ -4,8 +4,10 @@ Proyecto final de Proyectos de Machine Learning (2026-2).
 Aplicación que usa un modelo Random Forest para estimar el riesgo de enfermedad cardíaca.
 
 ## Integrantes
-- Andrea Abigail Caisa Cango
-- (agregar compañeros)
+- LISETH ESTEFANIA NATO PAUCAR
+- ANDREA ABIGAIL CAISA CANGO
+- JOSSELYN ANDREA QUIÑONEZ USHIÑA
+
 
 ## Datos
 Dataset Heart Disease (Cleveland), 303 pacientes reales.
