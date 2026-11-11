@@ -31,7 +31,7 @@ def entrenar_modelo(n_arboles=100, profundidad=5):
     prediccion = modelo.predict(X_test)
 
     # 7. Calcular las métricas
-        metricas = {
+    metricas = {
         "exactitud": float(accuracy_score(y_test, prediccion)),
         "precision": float(precision_score(y_test, prediccion)),
         "recall": float(recall_score(y_test, prediccion)),
