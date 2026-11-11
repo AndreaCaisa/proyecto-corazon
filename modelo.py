@@ -31,12 +31,14 @@ def entrenar_modelo(n_arboles=100, profundidad=5):
     prediccion = modelo.predict(X_test)
 
     # 7. Calcular las métricas
-    metricas = {
+        metricas = {
         "exactitud": float(accuracy_score(y_test, prediccion)),
         "precision": float(precision_score(y_test, prediccion)),
         "recall": float(recall_score(y_test, prediccion)),
         "f1": float(f1_score(y_test, prediccion)),
         "matriz": confusion_matrix(y_test, prediccion).tolist(),
+        # Qué tanto pesa cada dato en la decisión del modelo
+        "importancias": dict(zip(X.columns, modelo.feature_importances_.tolist())),
     }
 
     # 8. Guardar el modelo entrenado en un archivo
